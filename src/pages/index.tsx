@@ -1,9 +1,9 @@
 export default function Home() {
   return (
-    <main>
+    <section>
       <h1 className='text-4xl font-semibold text-center text-indigo-900'>
-        RPG WIKI
+        INDEX
       </h1>
-    </main>
+    </section>
   )
 }
