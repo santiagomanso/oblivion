@@ -1,10 +1,13 @@
 import { navDataArray } from "@/types/navDataType";
+import { faHouse, faUser } from "@fortawesome/free-solid-svg-icons";
+
 
 export const navData: navDataArray = [
     {
     id: 1,
     text: "Home",
-    path: "/"
+        path: "/",
+    icon: faHouse
 },
     {
         id: 2,
@@ -29,6 +32,7 @@ export const navData: navDataArray = [
     {
         id: 6,
     text: "Profile",
-    path: "/profile"
+        path: "/profile",
+        icon: faUser
     }
 ]
