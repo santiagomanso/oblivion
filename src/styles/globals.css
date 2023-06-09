@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+@import 'animate.css';
 @import '@fontsource/play';
 @import '@fontsource/roboto';
 @import '@fontsource/press-start-2p';
