@@ -7,7 +7,7 @@ import { IconProp } from '@fortawesome/fontawesome-svg-core'
 const Navbar = () => {
   return (
     <nav>
-      <ul className='flex gap-10 justify-center text-lg font-bold text-white bg-gradient-to-r from-indigo-900 to-indigo-700 py-3 items-center'>
+      <ul className='flex gap-10 justify-center text-lg font-bold text-gray-600 lowercase bg-gray-100 shadow shadow-neutral-300 py-3 items-center font-play'>
         {navData.map((item) => {
           if (item.id === 2) {
             return <LanguageSwitcher key={item.id} />

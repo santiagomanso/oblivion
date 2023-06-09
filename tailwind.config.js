@@ -7,6 +7,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        primary: ['Press Start 2P', 'sans-serif'],
+        play: ['Play', 'sans-serif'],
+        roboto: ['Roboto', 'sans-serif'],
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
