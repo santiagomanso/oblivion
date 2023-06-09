@@ -20,8 +20,8 @@ export const navData: navDataArray = [
   },
   {
     id: 4,
-    text: 'Wiki',
-    path: '/wiki',
+    text: 'play',
+    path: '/game',
   },
   {
     id: 5,

@@ -1,3 +1,3 @@
-import { type navDataI } from "@/interfaces/navDataInterface"
+import { navDataI } from '@/interfaces/navbar/navDataInterface'
 
-export type navDataArray=navDataI[]
+export type navDataArray = navDataI[]
