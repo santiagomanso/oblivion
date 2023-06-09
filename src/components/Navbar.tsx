@@ -1,4 +1,4 @@
-import { navData } from '@/data/navData'
+import { navData } from '@/data/navbar/navData'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import LanguageSwitcher from './languageSwitcher'
 import Link from 'next/link'
@@ -23,7 +23,15 @@ const Navbar = () => {
               {item.icon && ( // Render `FontAwesomeIcon` only when `item.icon` is defined
                 <FontAwesomeIcon icon={icon} />
               )}
-              <span>{item.text}</span>
+              <span
+                className={`${
+                  item.text === 'play'
+                    ? 'bg-gradient-to-br px-4 py-[0.10rem] from-amber-800 to-stone-700 text-white font-medium font-play rounded flex gap-1 items-center shadow-md shadow-neutral-500 active:translate-y-2 transition-all duration-150 ease-out'
+                    : ''
+                }`}
+              >
+                {item.text}
+              </span>
             </Link>
           )
 
