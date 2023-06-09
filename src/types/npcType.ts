@@ -1,3 +1,3 @@
-import { npcI } from "@/interfaces/entitiesInterface";
+import { npcI } from '@/interfaces/entities/entitiesInterface'
 
-export type npc=npcI
+export type npcDataArray = npcI[]
