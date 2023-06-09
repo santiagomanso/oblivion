@@ -6,3 +6,5 @@ export interface navDataI {
   path: string
   icon?: IconDefinition
 }
+
+
