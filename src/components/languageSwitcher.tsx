@@ -1,8 +1,16 @@
-
+import Image from 'next/image'
 
 const languageSwitcher = () => {
   return (
-    <div className="flex gap-1 items-center"><img src="https://i.ibb.co/mzsjHwW/555526.png" className="w-5" /><span>en</span></div>
+    <div className='flex gap-1 items-center'>
+      <Image
+        alt='flag'
+        fill={true}
+        src='https://i.ibb.co/vVRn7jn/en.png'
+        className='w-8'
+      />
+      <span>en</span>
+    </div>
   )
 }
 
