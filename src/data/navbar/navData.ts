@@ -21,7 +21,7 @@ export const navData: navDataArray = [
   {
     id: 4,
     text: 'play',
-    path: '/game',
+    path: '/selectPlayer',
   },
   {
     id: 5,
