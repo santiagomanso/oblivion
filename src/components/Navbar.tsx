@@ -3,8 +3,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import LanguageSwitcher from './languageSwitcher'
 import Link from 'next/link'
 import { IconProp } from '@fortawesome/fontawesome-svg-core'
+import { useContext } from 'react'
+import { playerContext } from '@/context/playerContext'
 
 const Navbar = () => {
+  const { player } = useContext(playerContext)
   return (
     <nav>
       <ul className='flex gap-10 justify-center text-lg font-bold text-gray-600 lowercase bg-gray-100 shadow shadow-neutral-300 py-3 items-center font-play'>
@@ -34,9 +37,12 @@ const Navbar = () => {
               </span>
             </Link>
           )
-
-          return null
         })}
+        {player.id > 0 && (
+          <div className='relative bg-gradient-to-br from-amber-100 outline outline-2 outline-slate-400 to-slate-900 h-6 rounded-full overflow-hidden'>
+            <img src={player.image} alt={player.name} />
+          </div>
+        )}
       </ul>
     </nav>
   )

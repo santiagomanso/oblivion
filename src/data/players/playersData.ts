@@ -75,6 +75,6 @@ export const playersData: playersDataArray = [
       intelligence: 18,
       strength: 8,
     },
-    image: 'https://i.ibb.co/VxCsTHd/sorcerer.png',
+    image: 'https://i.ibb.co/RY7SzsW/sorcerer.png',
   },
 ]

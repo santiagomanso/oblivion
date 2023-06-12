@@ -4,4 +4,5 @@ export interface ContainerI {
   col?: boolean
   colCenter?: boolean
   style?: string
+  bgImg?: string
 }
