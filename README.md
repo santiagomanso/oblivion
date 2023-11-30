@@ -64,7 +64,7 @@ Una vez hecho esto, la API se encontrará lista para procesar peticiones🚀
 
 #### Obtener todos los Pokemones
 
-```http
+```bash
   GET /mypokeapi/
 ```
 
@@ -72,7 +72,7 @@ Este endpoint no requiere parámetros de ningun tipo.
 
 #### Obtener un único Pokemon por ID 🪪
 
-```http
+```bash
   GET /mypokeapi/id
 ```
 
@@ -82,7 +82,7 @@ Este endpoint no requiere parámetros de ningun tipo.
 
 #### Crear un nuevo Pokemon
 
-```http
+```bash
   POST /mypokeapi/new
 ```
 
@@ -95,7 +95,7 @@ Este endpoint no requiere parámetros de ningun tipo.
 
 #### Actualizar un Pokemon por ID 🪪
 
-```http
+```bash
   PATCH /mypokeapi/update/id
 ```
 
@@ -108,7 +108,7 @@ Este endpoint no requiere parámetros de ningun tipo.
 
 #### Eliminar un Pokemon por ID 🪪
 
-```http
+```bash
   DELTE /mypokeapi/delete/id
 ```
 
@@ -277,7 +277,7 @@ Conclusión: El MVC es un patrón de arquitectura que se centrá en separar la r
 
 ### Veamos con detalle el método PATCH
 
-endpoint: `http://localhost:4000/mypokeapi/update/:id`: Una peticion _req_ a este endpoint provocará que el enrutador de express, llame a la funcion _update_ definida dentro de la clase _PokemonController.ts_ que recibe como parámetro un _id_, debido a que la req esta tipada con typescript y validada con zod, lo primero que se deberá hacer será llamar a la funcion que valida el `id` con el schema correspondiente de zod, la funcion se llama `validateId()` y recibe un objeto como parámetro. Dentro de esta función, Zod valida el ID, lo convierte a un número y asegura que sea un número entero, un INT.
+endpoint: `bash://localhost:4000/mypokeapi/update/:id`: Una peticion _req_ a este endpoint provocará que el enrutador de express, llame a la funcion _update_ definida dentro de la clase _PokemonController.ts_ que recibe como parámetro un _id_, debido a que la req esta tipada con typescript y validada con zod, lo primero que se deberá hacer será llamar a la funcion que valida el `id` con el schema correspondiente de zod, la funcion se llama `validateId()` y recibe un objeto como parámetro. Dentro de esta función, Zod valida el ID, lo convierte a un número y asegura que sea un número entero, un INT.
 
 ```typescript
 const getByIdSchema = z
